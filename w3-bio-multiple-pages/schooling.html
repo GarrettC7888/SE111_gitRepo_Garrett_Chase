@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 3 | Demo</title>
+
+    <!--In document styling to showcase ID and Class power-->
+    <style>
+        /*we are now writting in CSS*/
+        /* in CSS we can select elements by: element type, id, or class*/
+        /*selecting elements by element type*/
+        h1{
+
+            font-size:45px;
+            font-family:'Courier new' , Courier , monospace;
+        }
+
+        div{
+            width:900px;
+            border:3px solid black;
+            border-radius:10px;
+            margin:auto;
+            padding:20px;
+            color:rgb(9, 27, 14);
+        }
+
+        /*selecting elements by ID*/
+        .bg-main{
+
+            background-color: rgb(36, 38, 41);
+            text-align:center;
+            padding:50px;
+            color:whitesmoke;
+            border-radius:10px;
+
+        }
+
+        .border{
+            border:3px solid black;
+            border-radius:10px;
+        }
+        #nav-link{
+            text-decoration:none;
+            font-size:24px;
+            margin-right:10px;
+            text-align:center;
+
+        }
+        
+    </style>
+</head>
+
+<body style ="background-color:rgb(105, 131, 131)";>
+
+    <div id ="container">
+
+        <div id ="header" class="border bg-main">
+            
+            <h1>Schooling page</h1>
+        
+        
+        </div><!--/ #Header end-->
+        
+        <div id="nav">
+            
+            <a href="index.html" class="nav-link">Bio</a>
+            <a href="schooling.html" class="nav-link">Schooling</a>
+            <a href="hobbies.html" class="nav-link">Hobbies</a>
+
+
+        </div><!--/ #Nav end-->
+
+        
+        <div id="content" class="border">
+            <h2>Schooling | Garrett Chase</h2>
+
+                
+            <ol>
+
+                <li><a href="https://www.neit.edu/" target="_blank">New England Institute of Technology</a><!--External (out of domain) link--></li>
+                <li><a href="https://cumberlandschools.org/high-school/" target="_blank">Cumberland High School</a><!--External (out of domain) link--></li>
+                <li>Cyber Security</li>
+    
+            </ol>
+    
+                
+            <img src="images/NEIT.jpg" alt="Front of New England Institute of Technology" style = "width:800px;">
+                    
+        
+            
+
+
+
+        </div><!--/ #Content-->
+
+        <div id="footer" class="border bg-main">
+
+            <p>&copy; Garrett Chase | SE111.02 | 202140</p>
+
+        
+        </div><!--/ #Footer end-->
+        
+        
+        
+    </div><!--/ #Container end-->
+</body>
+</html>

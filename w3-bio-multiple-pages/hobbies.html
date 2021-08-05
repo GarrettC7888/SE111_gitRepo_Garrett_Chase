@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 3 | Demo</title>
+
+    <!--In document styling to showcase ID and Class power-->
+    <style>
+        /*we are now writting in CSS*/
+        /* in CSS we can select elements by: element type, id, or class*/
+        /*selecting elements by element type*/
+        h1{
+
+            font-size:45px;
+            font-family:'Courier new' , Courier , monospace;
+        }
+
+        div{
+            width:900px;
+            border:3px solid black;
+            border-radius:10px;
+            margin:auto;
+            padding:20px;
+            color:rgb(9, 27, 14);
+        }
+
+        /*selecting elements by ID*/
+        .bg-main{
+
+            background-color: rgb(36, 38, 41);
+            text-align:center;
+            padding:50px;
+            color:whitesmoke;
+            border-radius:10px;
+
+        }
+
+        .border{
+            border:3px solid black;
+            border-radius:10px;
+        }
+        #nav-link{
+            text-decoration:none;
+            font-size:24px;
+            margin-right:10px;
+            text-align:center;
+
+        }
+        
+    </style>
+</head>
+
+<body style ="background-color:rgb(105, 131, 131)";>
+
+    <div id ="container">
+
+        <div id ="header" class="border bg-main">
+            
+            <h1>Bio page</h1>
+        
+        
+        </div><!--/ #Header end-->
+        
+        <div id="nav">
+            
+            <a href="index.html" class="nav-link">Bio</a>
+            <a href="schooling.html" class="nav-link">Schooling</a>
+            <a href="hobbies.html" class="nav-link">Hobbies</a>
+
+
+        </div><!--/ #Nav end-->
+
+        
+        <div id="content" class="border">
+            <h2>Hobbies | Garrett Chase</h2>
+
+                
+            <h2>Hobbies</h2>
+
+            <ul>
+
+                <li>Playing Video Games</li>
+                <li>Reading Comic Books</li>
+                <li>Watching Tv</li>
+                <li>Hanging out with friends</li>
+               
+            </ul>
+            <img src="images/Batman_Comic_Book_-_NARA_-_595420.gif" alt="Batman comic book" style = "width:800px;"> 
+                    
+        
+            
+
+
+
+        </div><!--/ #Content-->
+
+        <div id="footer" class="border bg-main">
+
+            <p>&copy; Garrett Chase | SE111.02 | 202140</p>
+
+        
+        </div><!--/ #Footer end-->
+        
+        
+        
+    </div><!--/ #Container end-->
+</body>
+</html>
