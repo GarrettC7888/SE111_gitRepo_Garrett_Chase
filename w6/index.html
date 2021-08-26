@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Garrett Chase">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    alert("Hi How are you today. This is a calculator that will calculate your GrossPay, Uncle Sam's share and the users net pay in a two week period")
+
+    var hourlyPay = Number(prompt('How much do you get paid for an hour'))
+
+    console.log("Hourly Pay:",hourlyPay)
+
+    var hoursWorked = Number(prompt('How much hours do you work per two weeks on average'))
+
+    console.log("Hours Worked in 2 weeks:",hoursWorked)
+
+    var taxRate = .2
+
+    var grossPay = hourlyPay * hoursWorked
+
+    console.log("Gross Pay: $",grossPay)
+
+    var samShare = grossPay * taxRate
+
+    console.log("Uncle Sam's Share: $",samShare)
+
+    var netPay = grossPay - samShare
+
+    console.log("Net Pay: $",netPay)
+
+    alert(`Gross Pay: $${grossPay.toFixed(2)} \nUncle Sam's Share: $${samShare.toFixed(2)}\nNet Pay: $${netPay.toFixed(2)}`)
+        
+    </script>
+    
+</body>
+</html>
